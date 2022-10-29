@@ -1,125 +1,127 @@
-*{
+/* general css */
+* {
   font-family: "poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  }
-  a {
+}
+a {
   text-decoration: none;
   color: black;
-  }
-  
-  li {
+}
+
+li {
   list-style-type: none;
-  }
-  .navbar {
+}
+
+/* header css */
+.navbar {
   background-color: #25bd85;
   padding: 20px;
   text-align: right;
-    position: fixed;
-    width: 100%;
-  }
-  .nav-logo {
+  position: fixed;
+  width: 100%;
+}
+.nav-logo {
   float: left;
   font-size: 20px;
   font-weight: 700;
-  }
-  
-  .navigation {
-    display: inline-block;
-  
-  }
-  .nav-items {
-   display: inline-block;
-  }
-  
-  .nav-links {
+}
+
+.navigation {
+  display: inline-block;
+}
+.nav-items {
+  display: inline-block;
+}
+
+.nav-links {
   display: inline-block;
   font-size: 20px;
   margin-right: 15px;
-font-weight: 700;
-  }
-  
+  font-weight: 700;
+}
+
+.ham-button {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+  display: none;
+}
+
+.line1,
+.line2,
+.line3 {
+  margin-bottom: 5px;
+  height: 2px;
+  width: 30px;
+  background-color: black;
+  transition: transform 400ms;
+}
+@media (max-width: 768px) {
   .ham-button {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform:translate(0,-50%);
-    display: none;
-    
+    display: block;
   }
-  
-  .line1, .line2, .line3 {
-    margin-bottom: 5px;
-    height: 2px;
-    width: 30px;
-    background-color: black;
-    transition: transform 400ms;
-  }
-  @media (max-width: 768px) {
-    .ham-button {
-      display:block;
-    }
-    .navbar { 
+  .navbar {
     text-align: center;
-    }
-    .nav-links {
-  /*  display: none; */
-       display: block;
-      padding: 0 0 80px 0;
-    }
-    .nav-items {
-  /*     display: none; */
+  }
+  .nav-links {
+    display: block;
+    padding: 0 0 80px 0;
+  }
+  .nav-items {
     position: fixed;
     top: 0;
-      left: 0;
-      transform: translate(-100%,-100%);
-      height: 100%;
-      width: 100%;
-      background-color: #121110d1;
-      padding: 35% 0;
-  /*     transition: transform .6s ease-in-out; */
-    }
-    .nav-links:hover a {
-    color:blue;
-    }
+    left: 0;
+    transform: translate(-100%, -100%);
+    height: 100%;
+    width: 100%;
+    background-color: #121110d1;
+    padding: 35% 0;
   }
-   .display {
-    transform: translate(0,0);
-    transition: transform .6s ease;
+  .nav-links:hover a {
+    color: blue;
   }
-  .toggle1 {
-   margin-bottom: 0;
-    transform: rotate(45deg) translate(9px, 0px);
-    background-color: #ff0000;
-    transition: transform 400ms;
-  }
-   .toggle2 {
-     margin-bottom: 0;
-    background: transparent;
-  }
-  
-   .toggle3 {
-    margin-bottom: 0;
-    transform: rotate(-45deg) translate(3px, 7px);
-    background-color: #ff0000;
-     transition: transform 400ms;
-  } 
+}
+.display {
+  transform: translate(0, 0);
+  transition: transform 0.6s ease;
+}
+.toggle1 {
+  margin-bottom: 0;
+  transform: rotate(45deg) translate(9px, 0px);
+  background-color: #ff0000;
+  transition: transform 400ms;
+}
+.toggle2 {
+  margin-bottom: 0;
+  background: transparent;
+}
 
-  .content{
-    padding-top: 90px;
-    width: 80%;
-    margin: auto;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .box-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    padding:15px 30px 30px;
+.toggle3 {
+  margin-bottom: 0;
+  transform: rotate(-45deg) translate(3px, 7px);
+  background-color: #ff0000;
+  transition: transform 400ms;
+}
+/* content css */
+.content {
+  padding-top: 90px;
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* box content css */
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 15px 30px 30px;
 }
 
 .box {
@@ -130,11 +132,10 @@ font-weight: 700;
   border: 2px solid #e7e3e3;
   margin: 15px;
 }
-.title{
-margin-bottom: 16px;
-font-size: 18px;
+.title {
+  margin-bottom: 16px;
+  font-size: 18px;
 }
-.sub-title{
+.sub-title {
   font-size: 16px;
 }
-
