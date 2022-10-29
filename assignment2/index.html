@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title>Assignment 2</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-logo">Brussels Sprouts 4Eva</div>
+    <nav class="navigation">
+    <ul class="nav-items">
+      <li class="nav-links"> <a href=""> List of Sprouts</a></li>
+      <li class="nav-links"> <a href=""> Sign In</a></li>
+      <li class="nav-links"> <a href=""> Sign Up</a></li>
+    </ul>
+      <div class="ham-button">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+    <p class="content">
+      Cupcake ipsum dolor sit amet chupa chups. Tootsie roll danish chocolate bar brownie donut croissant. Tart icing brownie candy sugar plum toffee. Fruitcake brownie jelly carrot cake oat cake chocolate bar fruitcake. Dessert ice cream sweet shortbread apple pie. Candy canes lemon drops dragée bear claw ice cream jelly gummi bears toffee. Sweet roll sweet halvah pudding tart bonbon gummies chupa chups. Sweet roll shortbread carrot cake lollipop apple pie gummies. Carrot cake oat cake carrot cake apple pie oat cake chocolate cake. Cotton candy brownie marshmallow cake tootsie roll. Macaroon candy carrot cake cotton candy danish sweet. Pastry biscuit dragée gummi bears chupa chups chocolate bar caramels candy cupcake.
+    </p>
+  <div class="box-wrapper">
+    <div class="box">
+<h5 class="title">Wafer Chupa chups tart jujubes</h5>
+<p class="sub-tilte">
+  Cupcake ipsum dolor sit amet chupa chups. Tootsie roll danish chocolate bar brownie donut croissant. Tart icing brownie candy sugar plum toffee. Fruitcake brownie jelly carrot cake oat cake chocolate bar fruitcake.
+</p>
+    </div>
+    <div class="box">
+      <h5 class="title">Wafer Chupa chups tart jujubes</h5>
+      <p class="sub-tilte">
+        Cupcake ipsum dolor sit amet chupa chups. Tootsie roll danish chocolate bar brownie donut croissant. Tart icing brownie candy sugar plum toffee. Fruitcake brownie jelly carrot cake oat cake chocolate bar fruitcake.
+      </p>
+    </div>
+    <div class="box">
+      <h5 class="title">Wafer Chupa chups tart jujubes</h5>
+      <p class="sub-tilte">
+        Cupcake ipsum dolor sit amet chupa chups. Tootsie roll danish chocolate bar brownie donut croissant. Tart icing brownie candy sugar plum toffee. Fruitcake brownie jelly carrot cake oat cake chocolate bar fruitcake.
+      </p>
+    </div>
+  </div>
+  <script>
+     var button = document.querySelector('.ham-button')
+ var slide = document.querySelector('.nav-items')
+ 
+  button.addEventListener('click', () =>{
+    slide.classList.toggle('display');
+    button.children[0].classList.toggle('toggle1')
+    button.children[1].classList.toggle('toggle2')
+    button.children[2].classList.toggle('toggle3')
+  })
+  </script>
+</body>
+</html>
