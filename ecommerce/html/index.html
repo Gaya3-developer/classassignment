@@ -1,0 +1,766 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shopbean - E-commerce Webiste</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
+
+  <!--Google font-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+  <!--icon css-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+
+  <!--Slick slider css-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+
+
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Theme css -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/main.css" media="screen" id="main">
+
+</head>
+<body>
+
+<!-- loader start -->
+<div class="loader-wrapper">
+  <div>
+    <img src="../assets/images/loader.gif" alt="loader">
+  </div>
+</div>
+<!-- loader end -->
+<!--header start-->
+<header id="stickyheader" class="_main_header">
+  <div class="_mobile_fix_option"></div>
+  <div class="_main_header_wrapper">
+    <div class="custom-container">
+      <div class="row">
+        <div class="col-xl-7 col-md-9 col-sm-6">
+          <div class="_main_header_wrapper_left">
+            <div class="_contact_info">
+              <i class="fa fa-phone"></i><span>+021-95-51-84</span>
+            </div>
+            <div class="_contact_info">
+              <i class="fa fa-envelope-o"></i><span>email@email.com</span>
+            </div>
+            <div class="_contact_info">
+              <i class="fa fa-map-marker"></i><span>1734 Stonecoal Road</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-md-3 col-sm-6">
+          <div class="_main_header_wrapper_right">
+            <div class="_contact_info">
+              <i class="fa fa-user"></i><span>My Account
+              </span>
+            
+            </div>
+            <div class="_contact_info">
+              <i class="fa fa-dollar"></i><span>usd
+              </span>
+            
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_main_header_middle">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="main-menu-block">
+          <div class="header-left">
+            <div class="brand-logo">
+              <a href="index.html">
+               <h1>Shopbean<span>.</span></h1>
+              </a>
+            </div>
+          </div>
+          <div class="input-block">
+          
+              <form class="shopbean-form">
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <span class="search"><i class="fa fa-search"></i></span>
+                  </div>
+                  <input type="search" class="form-control" placeholder="Search a Product" >
+                  <div class="input-group-text">
+                    <div class="form-search-btn">
+                      Search
+                    </div>
+                  </div>
+                </div>
+              </form>
+           
+          </div>
+          <div class="header-right">
+            <div class="icon-block">
+              <ul>
+                <li class="mobile-search">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </li>
+                <li class="mobile-user">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-user"></i>
+                  </a>
+                </li>
+                <li class="mobile-setting">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-gear"></i>
+                  </a>
+                </li>
+                <li class="mobile-wishlist item-count">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-heart"></i>
+                    <div class="item-count-contain" >
+                      2
+                    </div>
+                  </a>
+                </li>
+                <li class="mobile-cart item-count">
+                  <a href="javascript:void(0)">
+                    <div class="cart-block">
+                    <i class="fa fa-cart-plus"></i>
+                      <div class="cart-item">
+                        <h5>shopping</h5>
+                        <h5>cart</h5>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item-count-contain">
+                    3
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-nav">
+                <span class="toggle-nav">
+                  <i class="fa fa-bars "></i>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="searchbar-input">
+      <div class="input-group">       
+        <span class="input-group-text">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28.931px" height="28.932px" viewBox="0 0 28.931 28.932" style="enable-background:new 0 0 28.931 28.932;" xml:space="preserve"><g><path d="M28.344,25.518l-6.114-6.115c1.486-2.067,2.303-4.537,2.303-7.137c0-3.275-1.275-6.355-3.594-8.672C18.625,1.278,15.543,0,12.266,0C8.99,0,5.909,1.275,3.593,3.594C1.277,5.909,0.001,8.99,0.001,12.266c0,3.276,1.275,6.356,3.592,8.674c2.316,2.316,5.396,3.594,8.673,3.594c2.599,0,5.067-0.813,7.136-2.303l6.114,6.115c0.392,0.391,0.902,0.586,1.414,0.586c0.513,0,1.024-0.195,1.414-0.586C29.125,27.564,29.125,26.299,28.344,25.518z M6.422,18.111c-1.562-1.562-2.421-3.639-2.421-5.846S4.86,7.983,6.422,6.421c1.561-1.562,3.636-2.422,5.844-2.422s4.284,0.86,5.845,2.422c1.562,1.562,2.422,3.638,2.422,5.845s-0.859,4.283-2.422,5.846c-1.562,1.562-3.636,2.42-5.845,2.42S7.981,19.672,6.422,18.111z"/></g></svg>
+        </span>
+        <input type="text" class="form-control" placeholder="search your product">
+        <span class="input-group-text close-searchbar">
+          <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="_main_header_last">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navbar-menu">
+           
+         
+            <div class="menu-block">
+              <nav id="main-nav">
+                <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                <ul id="main-menu" class="sm header-main-menu sm-horizontal">
+                  <li>
+                    <div class="mobile-back text-right">Back<i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                  </li>
+                  <li>
+                    <a class="dark-menu-item" href="javascript:void(0)">Home</a>
+                  
+                  </li>
+                  <li>
+                    <a class="dark-menu-item" href="javascript:void(0)">Hot Deals</a>
+                  
+                  </li>
+                  <li ><a  class="dark-menu-item" href="javascript:void(0)">Categories
+                  </a>
+                 
+                  </li>
+                  <li >
+                    <a  class="dark-menu-item" href="javascript:void(0)">Laptops</a>
+                 
+                  </li>
+                  <li >
+                    <a  class="dark-menu-item" href="javascript:void(0)">Smart Phones</a>
+                 
+                  </li>
+                  <li>
+                    <a  class="dark-menu-item" href="javascript:void(0)">Cameras</a>
+                 
+                  </li>
+                  <li >
+                    <a  class="dark-menu-item" href="javascript:void(0)">Accessories</a>
+                 
+                  </li>
+                 
+                </ul>
+              </nav>
+            </div>
+            <div class="icon-block">
+              <ul>
+                <li class="mobile-search">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </li>
+                <li class="mobile-user onhover-dropdown">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-user"></i>
+                  </a>
+                </li>
+                <li class="mobile-setting">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-gear"></i>
+                  </a>
+                </li>
+                <li class="mobile-wishlist item-count">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-heart"></i><div class="cart-item">
+                      <div>0 item<span>wishlist</span>
+                      </div>
+                    </div>
+                    <div class="item-count-contain" >
+                      2
+                    </div>
+                  </a>
+                </li>
+                <li class="mobile-cart item-count">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-cart-plus"></i>
+                 </a>
+                  <div class="item-count-contain">
+                    3
+                  </div>
+                </li>
+              </ul>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="searchbar-input">
+      <div class="input-group">       
+        <span class="input-group-text">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28.931px" height="28.932px" viewBox="0 0 28.931 28.932" style="enable-background:new 0 0 28.931 28.932;" xml:space="preserve"><g><path d="M28.344,25.518l-6.114-6.115c1.486-2.067,2.303-4.537,2.303-7.137c0-3.275-1.275-6.355-3.594-8.672C18.625,1.278,15.543,0,12.266,0C8.99,0,5.909,1.275,3.593,3.594C1.277,5.909,0.001,8.99,0.001,12.266c0,3.276,1.275,6.356,3.592,8.674c2.316,2.316,5.396,3.594,8.673,3.594c2.599,0,5.067-0.813,7.136-2.303l6.114,6.115c0.392,0.391,0.902,0.586,1.414,0.586c0.513,0,1.024-0.195,1.414-0.586C29.125,27.564,29.125,26.299,28.344,25.518z M6.422,18.111c-1.562-1.562-2.421-3.639-2.421-5.846S4.86,7.983,6.422,6.421c1.561-1.562,3.636-2.422,5.844-2.422s4.284,0.86,5.845,2.422c1.562,1.562,2.422,3.638,2.422,5.845s-0.859,4.283-2.422,5.846c-1.562,1.562-3.636,2.42-5.845,2.42S7.981,19.672,6.422,18.111z"/></g></svg>
+        </span>
+        <input type="text" class="form-control" placeholder="search your product">
+        <span class="input-group-text close-searchbar">
+          <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+<!--header end-->
+
+
+
+
+<!--slider start-->
+<section class="_home_page_banner  b-g-white" id="home-slide">
+  <div class="custom-container">
+    <div class="row">
+      <div class="col">
+        <div class="slide-1 no-arrow">
+          <div>
+            <div class="_home_page_banner_slider">
+              <div class="_slider_img">
+                <ul class="_banner_layout_slide_1">
+                  <li id="img-1"><img src="../assets/images/layout-2/slider/1.1.png" class="img-fluid" alt="slider"></li>
+                  <li id="img-2" class="_home_page_slide_center"><img src="../assets/images/layout-2/slider/1.2.png" class="img-fluid" alt="slider"></li>
+                </ul>
+              </div>
+              <div class="_home_page_banner_slider_content">
+                <div>
+                  <h1>mi<span>Mobile</span></h1>
+                  <h4>fast and light</h4>
+                  <h2>Pixel Perfect Deal Camera</h2>
+                  <a href="#" class="btn btn-normal">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="_home_page_banner_slider">
+              <div class="_slider_img">
+                <ul class="_banner_layout_slide_2">
+                  <li id="img-3" class="_home_page_slide_center"><img src="../assets/images/layout-2/slider/2.1.png" class="img-fluid" alt="slider"></li>
+                  <li id="img-4" class="_home_page_slide_center"><img src="../assets/images/layout-2/slider/2.2.png" class="img-fluid" alt="slider"></li>
+                </ul>
+              </div>
+              <div class="_home_page_banner_slider_content">
+                <div>
+                  <h1>big<span>Sale</span></h1>
+                  <h4>now start at $99</h4>
+                  <h2>50% off</h2>
+                  <a href="#" class="btn btn-normal">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="_home_page_banner_slider">
+              <div class="_slider_img">
+                <ul class="_banner_layout_slide_3">
+                  <li id="img-5"><img src="../assets/images/layout-2/slider/3.2.png" class="img-fluid" alt="slider"></li>
+                  <li id="img-6" class="_home_page_slide_center"><img src="../assets/images/layout-2/slider/3.1.png" class="img-fluid" alt="slider"></li>
+                </ul>
+              </div>
+              <div class="_home_page_banner_slider_content">
+                <div>
+                  <h1>camera<span>Sale</span></h1>
+                  <h4>now start at $79</h4>
+                  <h2>70% off today</h2>
+                  <a href="#" class="btn btn-normal">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--slider end-->
+
+<!--collection banner start-->
+<section class="_category_banner section-pt-space b-g-white ">
+  <div class="custom-container">
+    <div class="row _category">
+      <div class="col-md-4">
+        <div class="_category_banner_wrapper">
+          <div class="_category_img">
+            <img src="../assets/images/layout-2/collection-banner/1.jpg" class="img-fluid bg-img  " alt="banner">
+          </div>
+          <div class="_category_content justify-content-end">
+            <div>
+              <h3>women</h3>
+              <h4>fashion</h4>
+              <div class="shop">
+                <a href="#">
+                  shop now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="_category_banner_wrapper">
+          <div class="_category_img">
+            <img src="../assets/images/layout-2/collection-banner/2.jpg" class="img-fluid bg-img  " alt="banner">
+          </div>
+          <div class="_category_content justify-content-end">
+            <div>
+              <h3>camera</h3>
+              <h4>lenses</h4>
+              <div class="shop">
+                <a href="#">
+                  shop now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="_category_banner_wrapper">
+          <div class="_category_img">
+            <img src="../assets/images/layout-2/collection-banner/3.jpg" class="img-fluid bg-img  " alt="banner">
+          </div>
+          <div class="_category_content justify-content-end">
+            <div>
+              <h3>refrigerator</h3>
+              <h4>lG mini</h4>
+              <div class="shop">
+                <a href="#">
+                  shop now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--collection banner end-->
+
+<!--discount banner start-->
+<section class="_discount_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="_discount_banner_wrapper">
+          <h2>Discount on every single item on our site.</h2>
+          <h1><span>OMG! Just Look at the</span> <span>great Deals!</span></h1>
+          <div class="_discount_banner_round">
+            <div class="_discount_banner_sub_round">
+              How does it feel, when you see great discount deals for each product?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--discount banner end-->
+
+
+
+
+
+<!--collection banner start-->
+<section class="_advertise_banner">
+  <div class="custom-container">
+    <div class="row">
+      <div class="col">
+        <div class="_advertise_banner_wrapper banner-5 p-center">
+          <div class="_advertise_img">
+            <img src="../assets/images/layout-2/collection-banner/7.jpg" class="bg-img  " alt="banner">
+          </div>
+          <div class="_advertise_banner_content">
+            <div class="_advertise_sub_content">
+              <h3>save up to 30% off</h3>
+              <h4>women<span>fashion</span></h4>
+              <div class="_advertise_banner_btn">
+                <a class="btn btn-normal" href="#">
+                  shop now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--collection banner end-->
+
+<!--deal banner start-->
+<section class="_deal_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <div class="_deal_banner_wrapper">
+          <h2>
+            save up to  30% to 40% off
+          </h2>
+          <h1>
+            omg! just look at the great deals!
+          </h1>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4 ">
+        <div class="_deal_banner_wrapper">
+          <div class="_deal_banner_btn">
+            <a href="#" class="btn-white">
+              View more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--deal banner end-->
+
+<!--product category start-->
+
+<section class="_pdt_type_section rounded-category">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="_pdt_type_slider no-arrow">
+        
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/1.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                flower
+              </a>
+            </div>
+          
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/2.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                furniture
+              </a>
+            </div>
+          
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/3.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                bag
+              </a>
+            </div>
+          
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/4.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                tools
+              </a>
+            </div>
+      
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/5.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                grocery
+              </a>
+            </div>
+         
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/6.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                camera
+              </a>
+            </div>
+        
+            <div class="_pdt_type_section_wrapper">
+              <div class="_pdt_img_wrapper">
+                <a href="#">
+                  <img src="../assets/images/layout-1/rounded-cat/7.png" alt="category  " class="img-fluid">
+                </a>
+              </div>
+              <a href="#" class="btn-rounded">
+                shoes
+              </a>
+            </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--rounded category end-->
+
+
+
+
+
+<!--category banner start-->
+
+<section class="_category_banner">
+  <div class="container-fluid">
+    <div class="row _category">
+      <div class="col-md-4">
+        <div class="_category_banner_wrapper">
+          <div class="_category_img">
+            <img src="../assets/images/layout-2/collection-banner/4.jpg" class="img-fluid bg-img " alt="banner">
+          </div>
+          <div class="_category_content">
+            <div>
+            <h3>Leather</h3>
+              <h4>new bag</h4>
+              <button type="button">
+                <a href="#">
+                  shop now
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="_category_banner_wrapper">
+          <div class="_category_img">
+            <img src="../assets/images/layout-2/collection-banner/5.jpg" class="img-fluid bg-img " alt="banner">
+          </div>
+          <div class="_category_content ">
+            <div>
+              <h3>nike</h3>
+              <h4>breeze</h4>
+              <button type="button">
+                <a href="#">
+                  shop now
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="_category_banner_wrapper">
+          <div class="_category_img">
+            <img src="../assets/images/layout-2/collection-banner/6.jpg" class="img-fluid bg-img " alt="banner">
+          </div>
+          <div class="_category_content ">
+            <div>
+              <h3>Printing 3D</h3>
+              <h4>USB moon</h4>
+              <button type="button">
+                <a href="#">
+                  shop now
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--category banner end-->
+
+
+
+
+
+
+
+
+
+<!-- footer start -->
+<footer id="footer" class="_footer">
+
+  <div class="_footer_section">
+  
+  <div class="container">
+  
+  <div class="row">
+  <div class="col-md-4 col-xs-6">
+  <div class="_footer_wrapper">
+    <div class="_brand_logo">
+      <a href="index.html">
+       <h1>Shopbean<span>.</span></h1>
+      </a>
+    </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+  <ul class="_social_icons">
+    <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-rss"></i></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-2 col-xs-6">
+  <div class="_footer_wrapper">
+  <h3>Categories</h3>
+  <ul>
+  <li><a href="#">Hot deals</a></li>
+  <li><a href="#">Laptops</a></li>
+  <li><a href="#">Smartphones</a></li>
+  <li><a href="#">Cameras</a></li>
+  <li><a href="#">Accessories</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-2 col-xs-6">
+  <div class="_footer_wrapper">
+  <h3>Information</h3>
+  <ul>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">Orders and Returns</a></li>
+  <li><a href="#">Terms &amp; Conditions</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+  <div class="_footer_wrapper">
+  <h3>Contact us</h3>
+  <ul>
+    <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+    <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+    <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+    </ul>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  
+  <div  class="_copyright_footer">
+  <div class="container">
+  
+  <div class="row">
+  <div class="col-md-12">
+    <div class="_copyright_footer_wrapper">
+      <ul>
+        <li><a href="javascript:void(0)"><img src="../assets/images/layout-1/pay/1.png" class="img-fluid" alt="pay"></a></li>
+        <li><a href="javascript:void(0)"><img src="../assets/images/layout-1/pay/2.png" class="img-fluid" alt="pay"></a></li>
+        <li><a href="javascript:void(0)"><img src="../assets/images/layout-1/pay/3.png" class="img-fluid" alt="pay"></a></li>
+        <li><a href="javascript:void(0)"><img src="../assets/images/layout-1/pay/4.png" class="img-fluid" alt="pay"></a></li>
+        <li><a href="javascript:void(0)"><img src="../assets/images/layout-1/pay/5.png" class="img-fluid" alt="pay"></a></li>
+      </ul>
+         
+  <span>
+  
+    Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved.
+    
+    </span>
+    </div>
+
+  </div>
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  </footer>
+<!-- footer end -->
+
+<!-- latest jquery-->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<!-- slick js-->
+<script src="../assets/js/slick.js"></script>
+<!-- popper js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<!-- Bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- main script js-->
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

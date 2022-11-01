@@ -1,0 +1,154 @@
+.sm {
+  box-sizing: border-box;
+  position: static;
+  z-index: 1;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  direction: ltr;
+  text-align: left;
+
+  li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    direction: ltr;
+    text-align: left;
+    position: relative;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    &.disabled {
+      cursor: default;
+    }
+  }
+}
+
+.toggle-nav {
+  position: relative;
+  cursor: pointer;
+  i {
+    font-size: 24px;
+    color: $theme-color1;
+  }
+}
+
+.header-main-menu {
+  a {
+    &,
+    &:hover,
+    &:active {
+      padding-right: 35px;
+      color: $black;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 23px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      letter-spacing: 0.07em;
+      position: relative;
+    }
+    &:hover {
+      color: $theme-color1;
+    }
+  }
+}
+
+// Responsive menu css start //
+@media (min-width: 1200px) {
+  .toggle-nav {
+    display: none;
+  }
+
+  .mobile-back {
+    display: none !important;
+  }
+
+  .header-main-menu {
+    li {
+      position: relative;
+      float: left;
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 1367px) {
+  .header-main-menu {
+    a {
+      font-size: 14px;
+      &:hover,
+      &:active {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .sm-horizontal {
+    position: fixed;
+    background-color: $white;
+    width: 300px;
+    border-radius: 0;
+    border: 1px solid $light-border;
+    top: 0;
+    height: 100vh;
+    right: -300px;
+    z-index: 99;
+    transition: all 0.3s ease;
+    overflow: scroll;
+
+    .mobile-back {
+      padding: 12px;
+      font-size: 18px;
+      color: $black;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: 1px solid $light-border;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  .header-main-menu {
+    > li {
+      > a {
+        font-weight: 700;
+        &:hover,
+        &:focus,
+        &:active {
+          font-weight: 700;
+        }
+      }
+    }
+    li {
+      a {
+        padding: 10px 15px;
+        font-size: 14px;
+        &:hover {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 577px) {
+  ._main_header{
+    &_wrapper {
+      height: 0;
+    }
+  }
+ 
+}

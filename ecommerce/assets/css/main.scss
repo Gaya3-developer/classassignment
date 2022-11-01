@@ -1,0 +1,98 @@
+
+@import 'theme/config';
+$body-back:#f2f8f9 ;
+$bg-light : #f9f9f9 ;
+$light-green1:rgba($theme-color2, 0.45);
+.bg-light{
+  background-color: $bg-light !important;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-1;
+  font-size: 14px;
+  color: $grey;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+h2 {
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+h4 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size:14px;
+}
+h5 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+}
+label {
+  color: $black;
+  margin-bottom: 10px;
+}
+textarea,
+input {
+  letter-spacing: 0.05em;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+li {
+  display: inline-block;
+}
+
+a {
+  transition: 0.5s ease;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  
+}
+button:focus {
+  outline: none;
+}
+::selection {
+  background-color: $theme-color1;
+  color: $theme-color2;
+}
+@import 'theme/general';
+@import 'theme/header';
+@import 'theme/menu';
+@import 'theme/home';
+@import 'theme/product';
+@import 'theme/footer';
+@import 'theme/responsive';
