@@ -536,6 +536,18 @@ section {
   min-height: 400px;
 }
 
+
+@media (max-width: 1199px) {
+  .about p {
+    margin-bottom: 0px;
+  }
+  .about .content {
+    padding-bottom: 0px;
+  }
+  .about .d-flex{
+    padding-left: 0px !important;
+  }
+}
 @media (max-width: 991px) {
   .about .image {
     text-align: center;
