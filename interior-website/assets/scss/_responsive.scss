@@ -1,0 +1,404 @@
+@include media-xl {
+  .banner {
+    &_img {
+      min-height: 637px;
+    }
+    &_content {
+      &_wrapper {
+        min-height: 637px;
+        p {
+          margin-right: 72px;
+        }
+      }
+    }
+  }
+  .features {
+    &_content {
+      width: 446px;
+      margin: 0;
+      &_list {
+        &_wrapper {
+          width: 650px;
+        }
+        &_container {
+          margin-left: 0;
+          //   width: 650px;
+        }
+      }
+    }
+  }
+  .art {
+    &_img_1 {
+      min-height: 330px;
+    }
+    &_img_2 {
+      min-height: 330px;
+    }
+  }
+  .overview {
+    &_title {
+      h2 {
+        font-size: 2.25rem;
+      }
+    }
+  }
+  .trends {
+    &_img {
+      min-height: 357px;
+    }
+    &_content {
+      padding-right: 20px;
+    }
+  }
+  .home_style {
+    &_img_1 {
+      height: 466px;
+    }
+    &_img_2 {
+      height: 294px;
+    }
+    &_img_3 {
+      height: 215px;
+    }
+    &_img_4 {
+      width: 352px;
+      height: 267px;
+    }
+  }
+  .get_in_touch {
+    // height: 559px;
+    &_card {
+      &_wrapper {
+        min-height: 266px;
+      }
+    }
+  }
+}
+@include media-lg {
+  .banner {
+    &_img {
+      min-height: 488px;
+    }
+    &_content {
+      &_wrapper {
+        min-height: 100px;
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 4.5rem;
+        }
+        p {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .features {
+    &_content {
+      width: 511px;
+
+      &_list {
+        &_wrapper {
+          width: 503px;
+          padding-top: 124px;
+        }
+      }
+    }
+    .features_img_md {
+      position: absolute;
+      z-index: -1;
+      width: 523px;
+      height: 565px;
+      right: 0;
+      filter: brightness(0.7);
+    }
+  }
+
+  .art {
+    .orange-box {
+      width: 391px;
+    }
+    &_img_1 {
+      min-height: 253px;
+    }
+    &_img_2 {
+      min-height: 253px;
+    }
+  }
+  .overview {
+    &_title,
+    p {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    ul {
+      padding: 30px 10px;
+    }
+  }
+  .trends {
+    .orange-box {
+      width: 150px;
+    }
+    &_img {
+      min-height: 273px;
+    }
+    &_content {
+      padding-right: 0px;
+      padding-left: 65px;
+      h5 {
+        font-size: 1.125rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .home_style {
+    &_container {
+      padding: 0 40px;
+    }
+    &_img_1 {
+      height: 357px;
+    }
+    &_img_2 {
+      height: 225px;
+    }
+    &_img_3 {
+      height: 165px;
+    }
+    &_img_4 {
+      width: 269px;
+      height: 256px;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .get_in_touch {
+    //  min-height: 393px;
+    &_card {
+      &_wrapper {
+        min-height: 100px;
+      }
+    }
+  }
+}
+@include media-md {
+  .body_active .burger {
+    display: none;
+  }
+  .banner {
+    &_img {
+      min-height: 732px;
+    }
+    &_content {
+      &_wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .features {
+    &_content {
+      width: 100%;
+
+      &_list {
+        margin-bottom: 30px;
+        &_wrapper {
+          width: 169px;
+          padding-top: 20px;
+          margin: auto;
+        }
+      }
+    }
+    .features_img_md {
+      bottom: 0;
+      width: 482px;
+      height: 758px;
+    }
+  }
+  .art {
+    .orange-box {
+      width: 440px;
+    }
+    &_img_1 {
+      min-height: 569px;
+      margin-bottom: 20px;
+    }
+    &_img_2 {
+      min-height: 569px;
+    }
+    p {
+      padding: 50px 0;
+    }
+  }
+  .trends {
+    .orange-box {
+      width: 385px;
+    }
+    &_img {
+      min-height: 410px;
+    }
+    &_content {
+      padding-left: 28px;
+      h2 {
+        font-size: 1.875rem;
+      }
+    }
+  }
+  .home_style {
+    &_container {
+      padding: 0;
+    }
+    img {
+      width: 100%;
+    }
+    &_img_1 {
+      height: 536px;
+    }
+    &_img_2 {
+      height: 675px;
+    }
+    &_img_3 {
+      height: 495px;
+    }
+    &_img_4 {
+      height: 411px;
+    }
+  }
+  .get_in_touch {
+    //   min-height: auto;
+    //    height: auto;
+    h1 {
+      font-size: 3.4375rem;
+      padding-top: 50px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    .sub-title {
+      width: 540px;
+    }
+    &_card {
+      &_wrapper {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .orange-box {
+    height: 100%;
+    width: 364px;
+    right: auto;
+    margin-top: initial;
+    margin-bottom: initial;
+  }
+}
+@include media-sm {
+  .container {
+    width: 340px;
+  }
+  .banner {
+    &_img {
+      min-height: 461px;
+    }
+  }
+  .features {
+    .features_img_md {
+      width: 340px;
+      height: 535px;
+    }
+  }
+  .art {
+    .orange-box {
+      width: 241px;
+    }
+    h1 {
+      font-size: 4.0625rem;
+    }
+    .art_title {
+      padding: 0;
+    }
+    &_img_1 {
+      min-height: 358px;
+    }
+    &_img_2 {
+      min-height: 358px;
+    }
+    p {
+      padding-bottom: 0;
+    }
+  }
+  .trends {
+    .orange-box {
+      width: 202px;
+    }
+    &_img {
+      min-height: 258px;
+    }
+  }
+  .home_style {
+    &_img_1 {
+      height: 337px;
+    }
+    &_img_2 {
+      height: 425px;
+    }
+    &_img_3 {
+      height: 312px;
+    }
+    &_img_4 {
+      height: 340px;
+    }
+  }
+  .get_in_touch {
+    h1 {
+      padding-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 340px;
+    }
+    .sub-title {
+      width: 340px;
+    }
+  }
+  .footer {
+    &_section_1 {
+      p {
+        width: 340px;
+      }
+    }
+  }
+  .orange-box {
+    width: 249px;
+  }
+}
+
+
+@include media-xs {
+    .container {
+      width: 300px;
+    }
+
+    .features {
+      .features_img_md {
+        width: 300px;
+      }
+    }
+   
+    .get_in_touch {
+      h1 {
+        width: 300px;
+      }
+      .sub-title {
+        width: 300px;
+      }
+    }
+    .footer {
+      &_section_1 {
+        p {
+          width: 300px;
+        }
+      }
+    }
+  }
