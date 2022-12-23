@@ -1,0 +1,916 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #3fbbc0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #65c9cd;
+  text-decoration: none;
+}
+
+h2,
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f7fcfc;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+  color: #06377a;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #81bcba;
+          text-decoration-color: #81bcba;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 35px;
+}
+.section-title p {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 24px;
+  color: #737773;
+  font-weight: 300;
+}
+
+/*.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3fbbc0;
+  bottom: 0;
+  left: calc(50% - 25px);
+}*/
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header .logo img {
+  max-height: 80px;
+  width: 100%;
+}
+#header.header-scrolled {
+  background: white;
+}
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+/**
+  * Desktop Navigation 
+  */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar a,
+.navbar a:focus {
+  padding: 0px 0 0px 30px;
+  font-size: 18px;
+  color: #4b4b4b;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #1665d4;
+}
+.navbar .mobile-nav-toggle {
+  color: #4b4b4b;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.navbar.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(60, 60, 60, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar.navbar-mobile a,
+.navbar.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #555555;
+}
+.navbar.navbar-mobile a:hover,
+.navbar.navbar-mobile .active,
+.navbar.navbar-mobile li:hover > a {
+  color: #1665d4;
+}
+.navbar.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar.navbar-mobile .mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# banner Section
+--------------------------------------------------------------*/
+#banner {
+  width: 100%;
+  height: 150vh;
+  background-color: rgba(60, 60, 60, 0.8);
+  position: relative;
+  z-index: -2;
+}
+#banner .banner-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: opacity;
+  background-position: center top;
+  background-image: url(../img/banner.jpg), linear-gradient(#f9fafb, rgba(249, 250, 251, 0));
+  background-blend-mode: overlay;
+}
+#banner .container {
+  background: rgba(14, 39, 74, 0.5);
+  width: 100%;
+  transition: 0.5s ease;
+  color: white;
+  font-size: 20px;
+  padding: 100px 160px;
+  text-align: center;
+}
+#banner h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#banner h6 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+#banner h6:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 5px;
+  background: #81bcba;
+  bottom: -13px;
+  left: 42%;
+  text-align: center;
+}
+#banner p {
+  margin: 50px auto 30px auto;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+#banner a {
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  background: #81bcba;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+#banner a i {
+  margin-left: 15px;
+}
+#banner a:hover {
+  background: #65c9cd;
+}
+
+/*--------------------------------------------------------------
+# Who we are
+--------------------------------------------------------------*/
+.about .doctor {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about .doctor .doctor-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.about .doctor .doctor-img img {
+  width: 350px;
+  height: 350px;
+}
+.about .doctor .doctor-info {
+  padding: 25px 15px;
+}
+.about .doctor .doctor-info h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #06377a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .contact-info {
+  box-shadow: -3px 5px 0px #ccd0d0;
+  padding: 100px 60px;
+  z-index: 1;
+  background: white;
+  margin-right: 80px;
+}
+.contact .contact-img-bg {
+  position: absolute;
+  z-index: -1;
+  top: -30%;
+  right: 0;
+}
+.contact .contact-img-bg img {
+  width: 500px;
+  height: 500px;
+}
+.contact h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+  color: #06377a;
+}
+.contact h2 span {
+  font-weight: 300;
+}
+.contact h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: 5px;
+  background: #81bcba;
+  bottom: -15px;
+  left: 0;
+}
+.contact p {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #737773;
+  font-weight: 300;
+}
+.contact p strong {
+  font-weight: 700;
+  color: #06377a;
+}
+.contact p:nth-child(2) {
+  margin-top: 20px;
+}
+.contact h6 {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #06377a;
+  margin-bottom: 30px;
+}
+.contact a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #06377a;
+  margin-bottom: 20px;
+}
+.contact a i {
+  margin-right: 20px;
+  color: #81bcba;
+}
+
+/*--------------------------------------------------------------
+# About Ketamine
+--------------------------------------------------------------*/
+.about-ketamine .about-img {
+  background: url(../img/rose1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-ketamine .info-box {
+  margin-left: -12px;
+}
+.about-ketamine .info-box .box-1 {
+  background: #113468;
+  padding: 50px;
+}
+.about-ketamine .info-box .box-1 p {
+  margin: 0px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+.about-ketamine .info-box .box-2 {
+  background: #dcdcdc;
+  padding: 50px;
+}
+.about-ketamine .info-box .box-2 p {
+  margin: 0px;
+  font-size: 24px;
+  color: #5c534a;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.about-ketamine .info-box .box-2 span {
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 500;
+  color: #5c534a;
+}
+.about-ketamine .testimonial {
+  padding: 60px;
+}
+.about-ketamine .testimonial .testimonial-info {
+  display: flex;
+}
+.about-ketamine .testimonial .testimonial-info p {
+  font-size: 24px;
+  color: #5c534a;
+  font-weight: 300;
+  margin: 20px 20px 20px 40px;
+}
+.about-ketamine .testimonial .testimonial-info span {
+  font-size: 24px;
+  color: #5c534a;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+.about-ketamine .testimonial .testimonial-info .quote-img-close {
+  display: flex;
+  align-items: flex-end;
+}
+.about-ketamine .testimonial .testimonial-info img {
+  width: 50px;
+  height: 50px;
+}
+
+/*--------------------------------------------------------------
+# Patient Forms
+--------------------------------------------------------------*/
+.patient-form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/form-bg.jpg), linear-gradient(#b7b2d1, rgba(111, 137, 159, 0));
+  background-blend-mode: overlay;
+}
+.patient-form .container {
+  background: rgba(14, 39, 74, 0.5);
+  width: 100%;
+  transition: 0.5s ease;
+  color: white;
+  font-size: 20px;
+  padding: 0px 60px;
+}
+.patient-form .features-wrapper {
+  padding: 50px 0px;
+}
+.patient-form .features h6 {
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.patient-form .features p {
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.patient-form .features p span {
+  color: #81bcba;
+  font-size: 20px;
+  font-weight: 900;
+}
+.patient-form .features p:not(:last-child) {
+  text-transform: uppercase;
+}
+.patient-form .features p:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30%;
+  height: 5px;
+  background: #81bcba;
+  bottom: -15px;
+  left: 0;
+}
+.patient-form .features:last-child p:after {
+  content: none;
+}
+.patient-form .form-container {
+  position: absolute;
+  bottom: -15%;
+}
+.patient-form .patient-form-warpper {
+  box-shadow: -10px 10px 30px rgba(86, 79, 79, 0.49);
+  padding: 50px 80px;
+  background: white;
+}
+.patient-form .patient-form-warpper h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #06377a;
+}
+.patient-form .patient-form-warpper textarea, .patient-form .patient-form-warpper input[type=text] {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 12px 15px;
+  color: #5c534a;
+  font-family: "Lato", sans-serif;
+}
+.patient-form .patient-form-warpper textarea::-moz-placeholder, .patient-form .patient-form-warpper input[type=text]::-moz-placeholder {
+  color: rgba(92, 83, 74, 0.7490196078);
+  opacity: 1; /* Firefox */
+}
+.patient-form .patient-form-warpper textarea:-ms-input-placeholder, .patient-form .patient-form-warpper input[type=text]:-ms-input-placeholder {
+  color: rgba(92, 83, 74, 0.7490196078);
+  opacity: 1; /* Firefox */
+}
+.patient-form .patient-form-warpper textarea::placeholder, .patient-form .patient-form-warpper input[type=text]::placeholder {
+  color: rgba(92, 83, 74, 0.7490196078);
+  opacity: 1; /* Firefox */
+}
+.patient-form .patient-form-warpper p, .patient-form .patient-form-warpper label {
+  font-size: 14px;
+  color: #5c534a;
+  margin: 0;
+  padding: 0;
+}
+.patient-form .patient-form-warpper button[type=submit] {
+  border: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 15px 100px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  background: #81bcba;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 0 0 30px 0;
+  background-image: url(../img/rose.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+#footer .footer-top {
+  background: #113468;
+  padding: 60px 0 30px 0;
+  margin-bottom: 40px;
+}
+#footer .footer-top .social-links {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3fbbc0;
+  color: #113468;
+  line-height: 1;
+  margin-right: 25px;
+  border-radius: 100%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#footer .footer-top .social-links a i {
+  font-size: 25px;
+}
+#footer .footer-top .social-links a:hover {
+  background: white;
+  text-decoration: none;
+}
+#footer .footer-top h4 {
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 12px;
+  color: #fff8ec;
+  text-transform: uppercase;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links a {
+  color: #fff8ec;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 20px;
+}
+#footer .footer-top .footer-links a i {
+  margin-left: -35px;
+  padding-right: 20px;
+  color: #81bcba;
+}
+#footer .footer-top .footer-links a:hover {
+  color: #1665d4;
+}
+#footer .footer-top .footer-info p {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #3fbbc0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #5ec6ca;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .navbar a,
+.navbar a:focus {
+    font-size: 17px;
+  }
+  #banner {
+    height: 100vh;
+  }
+  #banner .container {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 80px 160px;
+  }
+}
+@media (max-width: 992px) {
+  .section-title {
+    padding-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .section-title p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .mobile-nav-toggle {
+    display: block;
+  }
+  #banner h2 {
+    font-size: 38px;
+  }
+  #banner h6 {
+    font-size: 25px;
+  }
+  #banner p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .about-ketamine .about-img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .about-ketamine .info-box .box-1 {
+    margin-bottom: 20px;
+  }
+  .about-ketamine .info-box .box-1 p {
+    font-size: 18px;
+  }
+  .about-ketamine .info-box .box-2 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .about-ketamine .info-box .box-2 span {
+    font-size: 20px;
+  }
+  .about-ketamine .testimonial {
+    padding: 20px 0px;
+  }
+  .about-ketamine .testimonial .testimonial-info p {
+    font-size: 18px;
+  }
+  .about-ketamine .testimonial .testimonial-info span {
+    font-size: 20px;
+  }
+  .contact .contact-img-bg {
+    display: none;
+  }
+  .contact .contact-info {
+    margin-right: 0px;
+  }
+  .contact h2 {
+    font-size: 25px;
+  }
+  .contact p {
+    font-size: 18px;
+  }
+  .contact h6 {
+    font-size: 18px;
+  }
+  .contact a {
+    font-size: 18px;
+  }
+  .about .doctor .doctor-img img {
+    height: 215px;
+  }
+  .about .doctor .doctor-info h4 {
+    font-size: 16px;
+  }
+  .patient-form .form-container {
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .patient-form .features-wrapper {
+    padding: 0;
+  }
+  .patient-form .features h6 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .patient-form .features p {
+    font-size: 14px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  .patient-form .patient-form-warpper {
+    padding: 20px 40px;
+  }
+  .patient-form .patient-form-warpper h2 {
+    font-size: 20px;
+  }
+  .patient-form .patient-form-warpper button[type=submit] {
+    padding: 15px 30px;
+  }
+  #footer .footer-top h4 {
+    font-size: 18px;
+  }
+  #footer .footer-top .footer-links a {
+    font-size: 16px;
+  }
+  #footer .footer-top .footer-info p {
+    font-size: 16px;
+  }
+  #footer .footer-info {
+    text-align: center;
+  }
+  #footer .footer-info img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .section-title {
+    padding-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 20px;
+    text-underline-offset: 20px;
+  }
+  .section-title p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  #banner .container {
+    padding: 80px 30px;
+  }
+  #banner h2 {
+    font-size: 28px;
+  }
+  #banner h6 {
+    font-size: 20px;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #81bcba;
+            text-decoration-color: #81bcba;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+  }
+  #banner h6:after {
+    display: none;
+  }
+  .about-ketamine .info-box .box-1 {
+    margin-bottom: 20px;
+  }
+  .about-ketamine .info-box .box-1 p {
+    font-size: 16px;
+  }
+  .about-ketamine .info-box .box-2 p {
+    font-size: 16px;
+  }
+  .about-ketamine .info-box .box-2 span {
+    font-size: 18px;
+  }
+  .about-ketamine .testimonial .testimonial-info p {
+    font-size: 16px;
+  }
+  .about-ketamine .testimonial .testimonial-info span {
+    font-size: 18px;
+  }
+  .contact h2 {
+    font-size: 20px;
+  }
+  .contact h2:after {
+    bottom: -5px;
+  }
+  .contact p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .contact h6 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .contact a {
+    font-size: 16px;
+  }
+  .about .doctor .doctor-img img {
+    height: 215px;
+    width: 216px;
+  }
+}
+@media (max-width: 575px) {
+  #banner .container {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  #banner h2 {
+    font-size: 16px;
+  }
+  #banner h6 {
+    font-size: 15px;
+  }
+  #banner p {
+    font-size: 14px;
+  }
+  #banner a {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .about-ketamine .info-box {
+    margin: auto;
+  }
+  .about-ketamine .testimonial .testimonial-info img {
+    width: 20px;
+    height: 20px;
+  }
+  .about-ketamine .testimonial .testimonial-info p {
+    margin: 20px 10px 0px 0px;
+  }
+  .contact .contact-info {
+    padding: 30px 12px;
+  }
+  .patient-form .container {
+    padding: 0 12px;
+  }
+  .patient-form .features-wrapper {
+    padding: 0 12px;
+  }
+  .patient-form .patient-form-warpper button[type=submit] {
+    padding: 15px 20px;
+  }
+  #footer .social-links {
+    justify-content: flex-start !important;
+  }
+  #footer .footer-info {
+    text-align: left;
+  }
+  #footer .footer-info img {
+    width: 70%;
+  }
+}/*# sourceMappingURL=main.css.map */

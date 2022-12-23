@@ -1,0 +1,352 @@
+@media (max-width: 1200px) {
+  .navbar {
+    a,
+    a:focus {
+      font-size: 17px;
+    }
+  }
+  #banner {
+    height: 100vh;
+    .container {
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 80px 160px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    padding-bottom: 30px;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .navbar {
+    ul {
+      display: none;
+    }
+    .mobile-nav-toggle {
+      display: block;
+    }
+  }
+  #banner {
+    h2 {
+      font-size: 38px;
+    }
+    h6 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .about-ketamine{
+    .about-img{
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    .info-box{
+     
+        .box-1{
+          margin-bottom: 20px;
+            p{
+              font-size: 18px;
+            }
+                }
+                .box-2{
+                 
+                    p{
+                      font-size: 18px;
+                      margin-bottom: 20px;
+                    }
+                    span{
+                      font-size: 20px;
+                    }
+                }
+    }
+ 
+    .testimonial {
+      padding: 20px 0px;
+        .testimonial-info {
+           
+            p{
+              font-size: 18px;  
+            }
+            span{
+              font-size: 20px;  
+            }
+        
+        }
+        }
+        
+   
+}
+  .contact {
+    .contact-img-bg {
+      display: none;
+    }
+    .contact-info{
+ 
+  margin-right: 0px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+  .about {
+    .doctor {
+      .doctor-img {
+        img {
+          height: 215px;
+        }
+      }
+      .doctor-info {
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .patient-form{
+    .form-container {
+      position: relative;
+      bottom: 0;
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  .features-wrapper{
+    padding: 0;
+  }
+  .features{
+    h6 {
+      
+      font-size: 20px;
+     margin-top: 30px;
+    }
+    p{
+      font-size: 14px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+  } 
+  .patient-form-warpper{
+    padding: 20px 40px;
+    h2 {
+      
+      font-size: 20px;
+     
+    }
+    button[type=submit]{
+      padding: 15px 30px;
+    }
+  }
+  }
+  #footer {
+    .footer-top {
+      h4 {
+        font-size: 18px;
+      }
+      .footer-links {
+        a {
+          font-size: 16px;
+        }
+      }
+      .footer-info {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .footer-info {
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .section-title {
+    padding-bottom: 30px;
+    h2 {
+      font-size: 20px;
+      text-underline-offset: 20px;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+  #banner {
+    .container {
+      padding: 80px 30px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h6 {
+      font-size: 20px;
+      text-decoration: underline;
+      text-decoration-color: #81bcba;
+      text-decoration-thickness: 5px;
+      text-underline-offset: 10px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+
+  .about-ketamine{
+    .info-box{
+     
+        .box-1{
+          margin-bottom: 20px;
+            p{
+              font-size: 16px;
+            }
+                }
+                .box-2{
+                 
+                    p{
+                      font-size: 16px;
+                    }
+                    span{
+                      font-size: 18px;
+                    }
+                }
+    }
+ 
+    .testimonial {
+    
+        .testimonial-info {
+         
+            p{
+              font-size: 16px;  
+            }
+            span{
+              font-size: 18px;  
+            }
+        
+        }
+        }
+        
+   
+}
+
+
+  .contact {
+   
+    h2 {
+      font-size: 20px;
+      &:after {
+        bottom: -5px;
+      }
+    }
+    p {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    h6 {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+  .about {
+    .doctor {
+      .doctor-img {
+        img {
+          height: 215px;
+          width: 216px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  #banner {
+    .container {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 14px;
+    }
+    a {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+  .about-ketamine{
+    .info-box{
+      margin: auto;
+    }
+    .testimonial{
+      .testimonial-info{
+        img{
+          width: 20px;
+          height: 20px;
+        }
+        p{
+          margin:20px 10px 0px 0px;
+        }
+      }
+    }
+  
+  }
+  .contact{
+    .contact-info{
+ padding: 30px 12px;
+        }
+  }
+  .patient-form{
+    .container{
+      padding: 0 12px;
+    }
+    .features-wrapper{
+      padding: 0 12px;
+    }
+    .patient-form-warpper{
+      button[type=submit] {
+        padding: 15px 20px;
+      }
+    }
+  }
+  #footer {
+    .social-links {
+      justify-content: flex-start !important;
+    }
+    .footer-info {
+      text-align: left;
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
