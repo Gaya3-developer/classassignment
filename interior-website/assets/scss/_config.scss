@@ -1,0 +1,40 @@
+$primary-color: #000000;
+$secondary-color: #e18339;
+$footer-section-color-1:#051622;
+$footer-section-color-2:#333333;
+$footer-link-color:#b6d9f1;
+$grey: #999999;
+$white:#fff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin media-xs {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
